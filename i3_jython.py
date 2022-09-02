@@ -7,8 +7,10 @@ size_y = int(os.environ['SIZE_Y'])
 
 def settings():
     if size_x == -1:
+        System.err.println('here?1')
         fullScreen()
     elif size_y == -1:
+        System.err.println('here?2')
         size(size_x,size_x)
     else:
         System.err.println('here')
