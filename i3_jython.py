@@ -11,7 +11,10 @@ def settings():
     elif size_y == -1:
         size(size_x,size_x)
     else:
-        size(size_x,size_y,'PDF')
+        System.err.println('here')
+        add_library('pdf')
+        size(size_x,size_y,PDF,'this_is_a_pdf.pdf')
+        System.err.println('then here')
     System.err.println('[Jython] Created!')
     send_echo('online')
 
